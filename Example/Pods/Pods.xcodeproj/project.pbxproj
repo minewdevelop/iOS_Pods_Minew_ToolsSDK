@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,14 @@
 		3C3E62A6F0C157B39FEBACEC41A650ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		578B118EF7AF9767D9DDE8C7905D1F1A /* Pods-MinewToolsKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AABB4B5B754499F204EF30B9B6F84BE /* Pods-MinewToolsKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ADA15892567D9D6004A70D6 /* MinewToolsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADA15882567D9D6004A70D6 /* MinewToolsKit.framework */; platformFilter = ios; };
+		6ADA15912567D9E8004A70D6 /* MTLBroadcastHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADA158A2567D9E7004A70D6 /* MTLBroadcastHandler.h */; };
+		6ADA15922567D9E8004A70D6 /* MTLConnectionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADA158B2567D9E7004A70D6 /* MTLConnectionHandler.h */; };
+		6ADA15932567D9E8004A70D6 /* MTLDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADA158C2567D9E7004A70D6 /* MTLDeviceInfo.h */; };
+		6ADA15942567D9E8004A70D6 /* MinewToolsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADA158D2567D9E7004A70D6 /* MinewToolsKit.h */; };
+		6ADA15952567D9E8004A70D6 /* MTLPeripheral.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADA158E2567D9E8004A70D6 /* MTLPeripheral.h */; };
+		6ADA15962567D9E8004A70D6 /* MTLOTAManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADA158F2567D9E8004A70D6 /* MTLOTAManager.h */; };
+		6ADA15972567D9E8004A70D6 /* MTLCentralManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ADA15902567D9E8004A70D6 /* MTLCentralManager.h */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
@@ -33,7 +41,6 @@
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D2615B4F37ED7A177577CB44D50A1FE7 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B49D8D13CF65525B18A8AF747E6AC38B /* ReplaceMe.m */; };
 		E3CB6D96EC28085FF4F725826FD59447 /* MinewToolsKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124D53E83345234A80179AB5A9069D1C /* MinewToolsKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -65,14 +72,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		089C16A7027E96AABC707F3261C35E36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		089C16A7027E96AABC707F3261C35E36 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B4DA282F50D63554EAA30575FF36ADD /* Pods-MinewToolsKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MinewToolsKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		0BCA0ABC55A58FAD99AD5232F94DE6C3 /* Pods-MinewToolsKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MinewToolsKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0D24D01504E7BA65D561B7ECBF005AF3 /* MinewToolsKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MinewToolsKit-dummy.m"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		124D53E83345234A80179AB5A9069D1C /* MinewToolsKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MinewToolsKit-umbrella.h"; sourceTree = "<group>"; };
-		14A344C7877FD12DF0E0D26BF2603D9A /* MinewToolsKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MinewToolsKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		150B0133E3590A1CB8E3D831ACD7B950 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		14A344C7877FD12DF0E0D26BF2603D9A /* MinewToolsKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MinewToolsKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		150B0133E3590A1CB8E3D831ACD7B950 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1C6477D59FAB0FB8782905B1E7A51E49 /* Pods-MinewToolsKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MinewToolsKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -89,16 +96,24 @@
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5AABB4B5B754499F204EF30B9B6F84BE /* Pods-MinewToolsKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MinewToolsKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		67F65E81C2F30A2EBCD1B68D3DA090EF /* Pods-MinewToolsKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MinewToolsKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		6ADA15882567D9D6004A70D6 /* MinewToolsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MinewToolsKit.framework; sourceTree = "<group>"; };
+		6ADA158A2567D9E7004A70D6 /* MTLBroadcastHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTLBroadcastHandler.h; path = MinewToolsKit/Classes/MTLBroadcastHandler.h; sourceTree = "<group>"; };
+		6ADA158B2567D9E7004A70D6 /* MTLConnectionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTLConnectionHandler.h; path = MinewToolsKit/Classes/MTLConnectionHandler.h; sourceTree = "<group>"; };
+		6ADA158C2567D9E7004A70D6 /* MTLDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTLDeviceInfo.h; path = MinewToolsKit/Classes/MTLDeviceInfo.h; sourceTree = "<group>"; };
+		6ADA158D2567D9E7004A70D6 /* MinewToolsKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MinewToolsKit.h; path = MinewToolsKit/Classes/MinewToolsKit.h; sourceTree = "<group>"; };
+		6ADA158E2567D9E8004A70D6 /* MTLPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTLPeripheral.h; path = MinewToolsKit/Classes/MTLPeripheral.h; sourceTree = "<group>"; };
+		6ADA158F2567D9E8004A70D6 /* MTLOTAManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTLOTAManager.h; path = MinewToolsKit/Classes/MTLOTAManager.h; sourceTree = "<group>"; };
+		6ADA15902567D9E8004A70D6 /* MTLCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTLCentralManager.h; path = MinewToolsKit/Classes/MTLCentralManager.h; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		7EFFECBCE8FF274D3A67BC391E9C2F78 /* MinewToolsKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MinewToolsKit-Info.plist"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8A382475D265BA053C5A2850C51E949F /* Pods-MinewToolsKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MinewToolsKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8C646B625CEF491095B2CE32A57335D5 /* MinewToolsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MinewToolsKit.modulemap; sourceTree = "<group>"; };
-		8DCF19DA5D82EC8C291FA2F05548DF50 /* MinewToolsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MinewToolsKit.framework; path = MinewToolsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCF19DA5D82EC8C291FA2F05548DF50 /* MinewToolsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MinewToolsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		902CDE0F8079B880E9EE62A6894E0CCE /* Pods-MinewToolsKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MinewToolsKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		91B94DC0A967510CD02F6039DA6CFC77 /* Pods-MinewToolsKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MinewToolsKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -106,10 +121,9 @@
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A02696961E58289D051451BC24EF42AC /* Pods-MinewToolsKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MinewToolsKit_Example-Info.plist"; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		B49D8D13CF65525B18A8AF747E6AC38B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = MinewToolsKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		BC3CC2E7567306C77B3F2CCBBC3FB148 /* Pods-MinewToolsKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MinewToolsKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
@@ -121,9 +135,9 @@
 		EE8173EBF732CEB894F7361658C74891 /* Pods-MinewToolsKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MinewToolsKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F20FE7A433E42BA7C179AC27FFDFD303 /* Pods-MinewToolsKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MinewToolsKit_Tests.modulemap"; sourceTree = "<group>"; };
 		F9BDC6A706BD706B15A35E9461B7B049 /* Pods-MinewToolsKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MinewToolsKit_Example-dummy.m"; sourceTree = "<group>"; };
-		FCCFBA306B51C859A963F4FA50DC02B2 /* Pods_MinewToolsKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MinewToolsKit_Tests.framework; path = "Pods-MinewToolsKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCFBA306B51C859A963F4FA50DC02B2 /* Pods_MinewToolsKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinewToolsKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		FFA45A0C47B992EE8AED2C27D01627C2 /* Pods_MinewToolsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MinewToolsKit_Example.framework; path = "Pods-MinewToolsKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA45A0C47B992EE8AED2C27D01627C2 /* Pods_MinewToolsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinewToolsKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB3DD57C6E6B0DA21DC3B75545E0868 /* Pods-MinewToolsKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MinewToolsKit_Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ADA15892567D9D6004A70D6 /* MinewToolsKit.framework in Frameworks */,
 				0E23ABA7BDD90A8CC2FE60E49D20B3F0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,7 +201,14 @@
 		38F8ABC199146B2BA134896DEBE1B524 /* MinewToolsKit */ = {
 			isa = PBXGroup;
 			children = (
-				B49D8D13CF65525B18A8AF747E6AC38B /* ReplaceMe.m */,
+				6ADA158D2567D9E7004A70D6 /* MinewToolsKit.h */,
+				6ADA158A2567D9E7004A70D6 /* MTLBroadcastHandler.h */,
+				6ADA15902567D9E8004A70D6 /* MTLCentralManager.h */,
+				6ADA158B2567D9E7004A70D6 /* MTLConnectionHandler.h */,
+				6ADA158C2567D9E7004A70D6 /* MTLDeviceInfo.h */,
+				6ADA158F2567D9E8004A70D6 /* MTLOTAManager.h */,
+				6ADA158E2567D9E8004A70D6 /* MTLPeripheral.h */,
+				6ADA15872567D9D6004A70D6 /* Frameworks */,
 				BF5D1A66594F00FCE6FA71883249576E /* Pod */,
 				ECF98C36168036FCD3A4F6B1C94B2469 /* Support Files */,
 			);
@@ -213,6 +235,15 @@
 				D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		6ADA15872567D9D6004A70D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ADA15882567D9D6004A70D6 /* MinewToolsKit.framework */,
+			);
+			name = Frameworks;
+			path = MinewToolsKit/Frameworks;
 			sourceTree = "<group>";
 		};
 		851986B7ADDE939A0F9A05A68B57BF61 /* Products */ = {
@@ -298,7 +329,6 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -389,6 +419,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3CB6D96EC28085FF4F725826FD59447 /* MinewToolsKit-umbrella.h in Headers */,
+				6ADA15942567D9E8004A70D6 /* MinewToolsKit.h in Headers */,
+				6ADA15972567D9E8004A70D6 /* MTLCentralManager.h in Headers */,
+				6ADA15922567D9E8004A70D6 /* MTLConnectionHandler.h in Headers */,
+				6ADA15932567D9E8004A70D6 /* MTLDeviceInfo.h in Headers */,
+				6ADA15952567D9E8004A70D6 /* MTLPeripheral.h in Headers */,
+				6ADA15962567D9E8004A70D6 /* MTLOTAManager.h in Headers */,
+				6ADA15912567D9E8004A70D6 /* MTLBroadcastHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +614,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62892598EF3A33A0E4E724D32EB1758 /* MinewToolsKit-dummy.m in Sources */,
-				D2615B4F37ED7A177577CB44D50A1FE7 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,7 +657,11 @@
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
 				PRODUCT_NAME = FBSnapshotTestCase;
@@ -651,7 +691,11 @@
 				INFOPLIST_FILE = "Target Support Files/MinewToolsKit/MinewToolsKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/MinewToolsKit/MinewToolsKit.modulemap";
 				PRODUCT_MODULE_NAME = MinewToolsKit;
 				PRODUCT_NAME = MinewToolsKit;
@@ -681,7 +725,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-MinewToolsKit_Example/Pods-MinewToolsKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MinewToolsKit_Example/Pods-MinewToolsKit_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -714,7 +762,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-MinewToolsKit_Tests/Pods-MinewToolsKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MinewToolsKit_Tests/Pods-MinewToolsKit_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -808,7 +860,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-MinewToolsKit_Tests/Pods-MinewToolsKit_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MinewToolsKit_Tests/Pods-MinewToolsKit_Tests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -841,7 +897,11 @@
 				INFOPLIST_FILE = "Target Support Files/MinewToolsKit/MinewToolsKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/MinewToolsKit/MinewToolsKit.modulemap";
 				PRODUCT_MODULE_NAME = MinewToolsKit;
 				PRODUCT_NAME = MinewToolsKit;
@@ -872,7 +932,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-MinewToolsKit_Example/Pods-MinewToolsKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MinewToolsKit_Example/Pods-MinewToolsKit_Example.modulemap";
 				OTHER_LDFLAGS = "";
@@ -904,7 +968,11 @@
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
 				PRODUCT_NAME = FBSnapshotTestCase;
