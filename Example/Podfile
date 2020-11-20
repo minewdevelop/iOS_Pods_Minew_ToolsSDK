@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'MinewToolsKit_Example' do
+  pod 'MinewToolsKit', :path => '../'
+
+  target 'MinewToolsKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
