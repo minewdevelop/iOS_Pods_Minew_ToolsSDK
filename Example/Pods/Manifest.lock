@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - MinewToolsKit (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - MinewToolsKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  MinewToolsKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  MinewToolsKit: d04f7bcc9ffc7e9b8f835b390337478c1db86fc0
+
+PODFILE CHECKSUM: 49aebacccac7f128e8eafddad016d104256917cb
+
+COCOAPODS: 1.10.0

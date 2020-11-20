@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08B1E6AB0A2173F564BCDDE6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		08B1E6AB0A2173F564BCDDE6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MinewToolsKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinewToolsKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +65,8 @@
 		ACE2A86832342465998E9424 /* Pods-MinewToolsKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinewToolsKit_Example.release.xcconfig"; path = "Target Support Files/Pods-MinewToolsKit_Example/Pods-MinewToolsKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BFD42AF8562741274B682F4F /* Pods_MinewToolsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MinewToolsKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C9EEADCCE370530E69C13C /* Pods-MinewToolsKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MinewToolsKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-MinewToolsKit_Example/Pods-MinewToolsKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DCECCDC58727096D4171AD4C /* MinewToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MinewToolsKit.podspec; path = ../MinewToolsKit.podspec; sourceTree = "<group>"; };
-		F6F9FFBE1D62B35CA769564B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DCECCDC58727096D4171AD4C /* MinewToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MinewToolsKit.podspec; path = ../MinewToolsKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F6F9FFBE1D62B35CA769564B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				675F87B754112B395AAEDD55 /* Pods-MinewToolsKit_Tests.debug.xcconfig */,
 				AA04DE316B5E0335D057E121 /* Pods-MinewToolsKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
